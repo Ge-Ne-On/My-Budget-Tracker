@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B07F8BD22C71FE600483E20 /* TrainingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07F8BC22C71FE600483E20 /* TrainingOperation.swift */; };
+		FC05375B22911DD800432A83 /* ManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC05375A22911DD800432A83 /* ManagerViewController.swift */; };
+		FC078B8D22FD43D40087FE8B /* TrainingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC078B8C22FD43D40087FE8B /* TrainingViewControllerTests.swift */; };
+		FC1619B722E676050080C7D0 /* MockNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1619B622E676050080C7D0 /* MockNetworkSession.swift */; };
+		FC1619B922E6B4B50080C7D0 /* managers.json in Resources */ = {isa = PBXBuildFile; fileRef = FC1619B822E6B4B50080C7D0 /* managers.json */; };
+		FC18AAFF22C47A8B0082C696 /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC18AAFE22C47A8B0082C696 /* TrainingViewModel.swift */; };
+		FC645E6F22A385E8007C5723 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC645E6E22A385E8007C5723 /* Manager.swift */; };
+		FC6460BD22A4C02D007C5723 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6460BC22A4C02D007C5723 /* AppColors.swift */; };
+		FC7BAC8222F4065C00EC6F6B /* BudgetTrackeriOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7BAC8122F4065C00EC6F6B /* BudgetTrackeriOSUITests.swift */; };
+		FC8D669822D918030074D834 /* BudgetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8D669722D918030074D834 /* BudgetCalculator.swift */; };
+		FC8D66A222D928030074D834 /* BudgetCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8D66A122D928030074D834 /* BudgetCalculatorTests.swift */; };
+		FC8D66A422D93F070074D834 /* TrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8D66A322D93F070074D834 /* TrainingTests.swift */; };
+		FC8D66A622D940020074D834 /* TrainingDownloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8D66A522D940020074D834 /* TrainingDownloadTests.swift */; };
+		FC908BDD22683BDA0091BFA1 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC908BDC22683BDA0091BFA1 /* TrainingViewController.swift */; };
+		FC908BDF2269391F0091BFA1 /* TrainingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC908BDE2269391F0091BFA1 /* TrainingTableViewCell.swift */; };
+		FCDB3F3C22E37991006ED936 /* ApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDB3F3B22E37991006ED936 /* ApiClientTests.swift */; };
+		FCEDC64D2266797F005B234D /* EmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDC64C2266797F005B234D /* EmployeeViewController.swift */; };
+		FCEDC65022667BA2005B234D /* BudgetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDC64F22667BA2005B234D /* BudgetTableViewCell.swift */; };
+		FCEDC6522266827A005B234D /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDC6512266827A005B234D /* Employee.swift */; };
+		FCEDC65422668283005B234D /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDC65322668283005B234D /* Training.swift */; };
+		FCF44F672263ED8300BF57DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF44F662263ED8300BF57DE /* AppDelegate.swift */; };
+		FCF44F6C2263ED8300BF57DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF44F6A2263ED8300BF57DE /* Main.storyboard */; };
+		FCF44F6E2263ED8500BF57DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCF44F6D2263ED8500BF57DE /* Assets.xcassets */; };
+		FCF44F712263ED8500BF57DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF44F6F2263ED8500BF57DE /* LaunchScreen.storyboard */; };
+		FCF45FC32265807C00BF57DE /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF45FC22265807C00BF57DE /* ApiClient.swift */; };
+		FCFC0C532293B37F005ACE50 /* BudgetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFC0C522293B37F005ACE50 /* BudgetTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC7BAC8422F4065C00EC6F6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCF44F5B2263ED8300BF57DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCF44F622263ED8300BF57DE;
+			remoteInfo = BudgetTrackeriOS;
+		};
+		FCF45FFF22666F8000BF57DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCF44F5B2263ED8300BF57DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCF44F622263ED8300BF57DE;
+			remoteInfo = BudgetTrackeriOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B07F8BC22C71FE600483E20 /* TrainingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingOperation.swift; sourceTree = "<group>"; };
+		FC05375A22911DD800432A83 /* ManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerViewController.swift; sourceTree = "<group>"; };
+		FC078B8C22FD43D40087FE8B /* TrainingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewControllerTests.swift; sourceTree = "<group>"; };
+		FC1619B622E676050080C7D0 /* MockNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkSession.swift; sourceTree = "<group>"; };
+		FC1619B822E6B4B50080C7D0 /* managers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = managers.json; sourceTree = "<group>"; };
+		FC18AAFE22C47A8B0082C696 /* TrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
+		FC645E6E22A385E8007C5723 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		FC6460BC22A4C02D007C5723 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		FC7BAC7F22F4065C00EC6F6B /* BudgetTrackeriOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetTrackeriOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC7BAC8122F4065C00EC6F6B /* BudgetTrackeriOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTrackeriOSUITests.swift; sourceTree = "<group>"; };
+		FC7BAC8322F4065C00EC6F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8D669722D918030074D834 /* BudgetCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCalculator.swift; sourceTree = "<group>"; };
+		FC8D66A122D928030074D834 /* BudgetCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCalculatorTests.swift; sourceTree = "<group>"; };
+		FC8D66A322D93F070074D834 /* TrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTests.swift; sourceTree = "<group>"; };
+		FC8D66A522D940020074D834 /* TrainingDownloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDownloadTests.swift; sourceTree = "<group>"; };
+		FC908BDC22683BDA0091BFA1 /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
+		FC908BDE2269391F0091BFA1 /* TrainingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTableViewCell.swift; sourceTree = "<group>"; };
+		FCDB3F3B22E37991006ED936 /* ApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTests.swift; sourceTree = "<group>"; };
+		FCEDC64C2266797F005B234D /* EmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewController.swift; sourceTree = "<group>"; };
+		FCEDC64F22667BA2005B234D /* BudgetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTableViewCell.swift; sourceTree = "<group>"; };
+		FCEDC6512266827A005B234D /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		FCEDC65322668283005B234D /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		FCF44F632263ED8300BF57DE /* BudgetTrackeriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetTrackeriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCF44F662263ED8300BF57DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCF44F6B2263ED8300BF57DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCF44F6D2263ED8500BF57DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCF44F702263ED8500BF57DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCF44F722263ED8500BF57DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCF45FC22265807C00BF57DE /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		FCF45FFA22666F8000BF57DE /* BudgetTrackeriOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetTrackeriOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCF45FFE22666F8000BF57DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFC0C522293B37F005ACE50 /* BudgetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC7BAC7C22F4065C00EC6F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF44F602263ED8300BF57DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF45FF722666F8000BF57DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC18AAFD22C47A760082C696 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FC18AAFE22C47A8B0082C696 /* TrainingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FC7BAC8022F4065C00EC6F6B /* BudgetTrackeriOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC7BAC8122F4065C00EC6F6B /* BudgetTrackeriOSUITests.swift */,
+				FC7BAC8322F4065C00EC6F6B /* Info.plist */,
+			);
+			path = BudgetTrackeriOSUITests;
+			sourceTree = "<group>";
+		};
+		FCEDC64E22667B8F005B234D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCEDC64F22667BA2005B234D /* BudgetTableViewCell.swift */,
+				FC908BDE2269391F0091BFA1 /* TrainingTableViewCell.swift */,
+				FCFC0C522293B37F005ACE50 /* BudgetTableViewCell.xib */,
+				FC6460BC22A4C02D007C5723 /* AppColors.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCF44F5A2263ED8300BF57DE = {
+			isa = PBXGroup;
+			children = (
+				FCF44F652263ED8300BF57DE /* BudgetTrackeriOS */,
+				FCF45FFB22666F8000BF57DE /* BudgetTrackeriOSTests */,
+				FC7BAC8022F4065C00EC6F6B /* BudgetTrackeriOSUITests */,
+				FCF44F642263ED8300BF57DE /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		FCF44F642263ED8300BF57DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCF44F632263ED8300BF57DE /* BudgetTrackeriOS.app */,
+				FCF45FFA22666F8000BF57DE /* BudgetTrackeriOSTests.xctest */,
+				FC7BAC7F22F4065C00EC6F6B /* BudgetTrackeriOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCF44F652263ED8300BF57DE /* BudgetTrackeriOS */ = {
+			isa = PBXGroup;
+			children = (
+				FC18AAFD22C47A760082C696 /* ViewModels */,
+				FCEDC64E22667B8F005B234D /* Views */,
+				FCF45FC12265803800BF57DE /* Models */,
+				FCF44F662263ED8300BF57DE /* AppDelegate.swift */,
+				FC05375A22911DD800432A83 /* ManagerViewController.swift */,
+				FCEDC64C2266797F005B234D /* EmployeeViewController.swift */,
+				FC908BDC22683BDA0091BFA1 /* TrainingViewController.swift */,
+				4B07F8BC22C71FE600483E20 /* TrainingOperation.swift */,
+				FCF44F6A2263ED8300BF57DE /* Main.storyboard */,
+				FCF44F6D2263ED8500BF57DE /* Assets.xcassets */,
+				FCF44F6F2263ED8500BF57DE /* LaunchScreen.storyboard */,
+				FCF44F722263ED8500BF57DE /* Info.plist */,
+				FC8D669722D918030074D834 /* BudgetCalculator.swift */,
+			);
+			path = BudgetTrackeriOS;
+			sourceTree = "<group>";
+		};
+		FCF45FC12265803800BF57DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCF45FC22265807C00BF57DE /* ApiClient.swift */,
+				FCEDC6512266827A005B234D /* Employee.swift */,
+				FCEDC65322668283005B234D /* Training.swift */,
+				FC645E6E22A385E8007C5723 /* Manager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCF45FFB22666F8000BF57DE /* BudgetTrackeriOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCF45FFE22666F8000BF57DE /* Info.plist */,
+				FC8D66A122D928030074D834 /* BudgetCalculatorTests.swift */,
+				FC8D66A322D93F070074D834 /* TrainingTests.swift */,
+				FC8D66A522D940020074D834 /* TrainingDownloadTests.swift */,
+				FCDB3F3B22E37991006ED936 /* ApiClientTests.swift */,
+				FC1619B622E676050080C7D0 /* MockNetworkSession.swift */,
+				FC1619B822E6B4B50080C7D0 /* managers.json */,
+				FC078B8C22FD43D40087FE8B /* TrainingViewControllerTests.swift */,
+			);
+			path = BudgetTrackeriOSTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC7BAC7E22F4065C00EC6F6B /* BudgetTrackeriOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC7BAC8822F4065C00EC6F6B /* Build configuration list for PBXNativeTarget "BudgetTrackeriOSUITests" */;
+			buildPhases = (
+				FC7BAC7B22F4065C00EC6F6B /* Sources */,
+				FC7BAC7C22F4065C00EC6F6B /* Frameworks */,
+				FC7BAC7D22F4065C00EC6F6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC7BAC8522F4065C00EC6F6B /* PBXTargetDependency */,
+			);
+			name = BudgetTrackeriOSUITests;
+			productName = BudgetTrackeriOSUITests;
+			productReference = FC7BAC7F22F4065C00EC6F6B /* BudgetTrackeriOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FCF44F622263ED8300BF57DE /* BudgetTrackeriOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCF44F752263ED8500BF57DE /* Build configuration list for PBXNativeTarget "BudgetTrackeriOS" */;
+			buildPhases = (
+				FCF44F5F2263ED8300BF57DE /* Sources */,
+				FCF44F602263ED8300BF57DE /* Frameworks */,
+				FCF44F612263ED8300BF57DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BudgetTrackeriOS;
+			productName = BudgetTrackeriOS;
+			productReference = FCF44F632263ED8300BF57DE /* BudgetTrackeriOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCF45FF922666F8000BF57DE /* BudgetTrackeriOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCF4600122666F8000BF57DE /* Build configuration list for PBXNativeTarget "BudgetTrackeriOSTests" */;
+			buildPhases = (
+				FCF45FF622666F8000BF57DE /* Sources */,
+				FCF45FF722666F8000BF57DE /* Frameworks */,
+				FCF45FF822666F8000BF57DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCF4600022666F8000BF57DE /* PBXTargetDependency */,
+			);
+			name = BudgetTrackeriOSTests;
+			productName = BudgetTrackeriOSTests;
+			productReference = FCF45FFA22666F8000BF57DE /* BudgetTrackeriOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCF44F5B2263ED8300BF57DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "fatty waffles";
+				TargetAttributes = {
+					FC7BAC7E22F4065C00EC6F6B = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = FCF44F622263ED8300BF57DE;
+					};
+					FCF44F622263ED8300BF57DE = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					FCF45FF922666F8000BF57DE = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+						TestTargetID = FCF44F622263ED8300BF57DE;
+					};
+				};
+			};
+			buildConfigurationList = FCF44F5E2263ED8300BF57DE /* Build configuration list for PBXProject "BudgetTrackeriOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCF44F5A2263ED8300BF57DE;
+			productRefGroup = FCF44F642263ED8300BF57DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCF44F622263ED8300BF57DE /* BudgetTrackeriOS */,
+				FCF45FF922666F8000BF57DE /* BudgetTrackeriOSTests */,
+				FC7BAC7E22F4065C00EC6F6B /* BudgetTrackeriOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC7BAC7D22F4065C00EC6F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF44F612263ED8300BF57DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCF44F712263ED8500BF57DE /* LaunchScreen.storyboard in Resources */,
+				FCF44F6E2263ED8500BF57DE /* Assets.xcassets in Resources */,
+				FCFC0C532293B37F005ACE50 /* BudgetTableViewCell.xib in Resources */,
+				FCF44F6C2263ED8300BF57DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF45FF822666F8000BF57DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1619B922E6B4B50080C7D0 /* managers.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC7BAC7B22F4065C00EC6F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7BAC8222F4065C00EC6F6B /* BudgetTrackeriOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF44F5F2263ED8300BF57DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCF45FC32265807C00BF57DE /* ApiClient.swift in Sources */,
+				FC8D669822D918030074D834 /* BudgetCalculator.swift in Sources */,
+				FCEDC6522266827A005B234D /* Employee.swift in Sources */,
+				FC6460BD22A4C02D007C5723 /* AppColors.swift in Sources */,
+				FCEDC65022667BA2005B234D /* BudgetTableViewCell.swift in Sources */,
+				FC05375B22911DD800432A83 /* ManagerViewController.swift in Sources */,
+				FCF44F672263ED8300BF57DE /* AppDelegate.swift in Sources */,
+				FC908BDF2269391F0091BFA1 /* TrainingTableViewCell.swift in Sources */,
+				FC18AAFF22C47A8B0082C696 /* TrainingViewModel.swift in Sources */,
+				FC645E6F22A385E8007C5723 /* Manager.swift in Sources */,
+				FC908BDD22683BDA0091BFA1 /* TrainingViewController.swift in Sources */,
+				FCEDC64D2266797F005B234D /* EmployeeViewController.swift in Sources */,
+				FCEDC65422668283005B234D /* Training.swift in Sources */,
+				4B07F8BD22C71FE600483E20 /* TrainingOperation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF45FF622666F8000BF57DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8D66A222D928030074D834 /* BudgetCalculatorTests.swift in Sources */,
+				FC8D66A622D940020074D834 /* TrainingDownloadTests.swift in Sources */,
+				FC078B8D22FD43D40087FE8B /* TrainingViewControllerTests.swift in Sources */,
+				FC1619B722E676050080C7D0 /* MockNetworkSession.swift in Sources */,
+				FC8D66A422D93F070074D834 /* TrainingTests.swift in Sources */,
+				FCDB3F3C22E37991006ED936 /* ApiClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC7BAC8522F4065C00EC6F6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCF44F622263ED8300BF57DE /* BudgetTrackeriOS */;
+			targetProxy = FC7BAC8422F4065C00EC6F6B /* PBXContainerItemProxy */;
+		};
+		FCF4600022666F8000BF57DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCF44F622263ED8300BF57DE /* BudgetTrackeriOS */;
+			targetProxy = FCF45FFF22666F8000BF57DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCF44F6A2263ED8300BF57DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCF44F6B2263ED8300BF57DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCF44F6F2263ED8500BF57DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCF44F702263ED8500BF57DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC7BAC8622F4065C00EC6F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XL9HN7CJ32;
+				INFOPLIST_FILE = BudgetTrackeriOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fattywaffles.BudgetTrackeriOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BudgetTrackeriOS;
+			};
+			name = Debug;
+		};
+		FC7BAC8722F4065C00EC6F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XL9HN7CJ32;
+				INFOPLIST_FILE = BudgetTrackeriOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fattywaffles.BudgetTrackeriOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BudgetTrackeriOS;
+			};
+			name = Release;
+		};
+		FCF44F732263ED8500BF57DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCF44F742263ED8500BF57DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCF44F762263ED8500BF57DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XL9HN7CJ32;
+				INFOPLIST_FILE = BudgetTrackeriOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fattywaffles.BudgetTrackeriOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCF44F772263ED8500BF57DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XL9HN7CJ32;
+				INFOPLIST_FILE = BudgetTrackeriOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fattywaffles.BudgetTrackeriOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCF4600222666F8000BF57DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XL9HN7CJ32;
+				INFOPLIST_FILE = BudgetTrackeriOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fattywaffles.BudgetTrackeriOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BudgetTrackeriOS.app/BudgetTrackeriOS";
+			};
+			name = Debug;
+		};
+		FCF4600322666F8000BF57DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XL9HN7CJ32;
+				INFOPLIST_FILE = BudgetTrackeriOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fattywaffles.BudgetTrackeriOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BudgetTrackeriOS.app/BudgetTrackeriOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC7BAC8822F4065C00EC6F6B /* Build configuration list for PBXNativeTarget "BudgetTrackeriOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC7BAC8622F4065C00EC6F6B /* Debug */,
+				FC7BAC8722F4065C00EC6F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCF44F5E2263ED8300BF57DE /* Build configuration list for PBXProject "BudgetTrackeriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCF44F732263ED8500BF57DE /* Debug */,
+				FCF44F742263ED8500BF57DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCF44F752263ED8500BF57DE /* Build configuration list for PBXNativeTarget "BudgetTrackeriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCF44F762263ED8500BF57DE /* Debug */,
+				FCF44F772263ED8500BF57DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCF4600122666F8000BF57DE /* Build configuration list for PBXNativeTarget "BudgetTrackeriOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCF4600222666F8000BF57DE /* Debug */,
+				FCF4600322666F8000BF57DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCF44F5B2263ED8300BF57DE /* Project object */;
+}
